@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node -- server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,9 @@
     "@babel/preset-env": "^7.5.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
