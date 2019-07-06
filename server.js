@@ -9,4 +9,7 @@ app.get("/", (req, res) => {
 
 const port = process.env.PORT || 8080;
 
-app.listen(port, () => console.log(`Server running at localhost:${port}`));
+if (process.env.NODE_ENV !== "test") {
+  app.listen(port, () => console.log(`Server running at localhost:${port}`));
+}
+export default app;
